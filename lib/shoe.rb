@@ -6,12 +6,8 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-  end
-
-  def BRANDS(brand)
-    if
-      !BRANDS.include?(@brand)
-      BRANDS << @brand
+    if !BRANDS.include?(@brand)     #keeps track of unique brands only
+      BRANDS << @brand              #adds only unique brands
     end
   end
 
