@@ -2,7 +2,7 @@ class Book
   attr_accessor :author, :page_count
   attr_reader :title, :genre
 
-  GENRES = []
+  GENRES = []     #Class Constant (which is avaiable to all instances of a particular class.)
 
   def initialize(title)
     @title = title

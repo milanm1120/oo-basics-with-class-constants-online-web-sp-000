@@ -6,14 +6,9 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    if !(BRANDS.include?(@brand))
-      BRANDS << @brand
+    if !BRANDS.include?(@brand)     #keeps track of unique brands only
+      BRANDS << @brand              #adds only unique brands
     end
-  end
-
-  def cobble
-    self.condition = "new"
-    puts "Your shoe is as good as new!"
   end
 
 end
